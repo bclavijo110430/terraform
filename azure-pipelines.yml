@@ -27,3 +27,9 @@ steps:
   inputs:
     command: plan
     environmentServiceName: 'azurecloudprovisioning'
+
+- task: TerraformCLI@0
+  displayName: 'terraform apply'
+  inputs:
+      command: apply
+      environmentServiceName: 'azurecloudprovisioning'
